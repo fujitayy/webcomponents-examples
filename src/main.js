@@ -1,3 +1,5 @@
+require("babel-polyfill");
+
 // document.querySelector等がimportされる側で期待通りに機能しないので↓のようにしてcurrentDocumentをdocumentの代わりに使用する。
 const currentDocument = document.currentScript.ownerDocument;
 
